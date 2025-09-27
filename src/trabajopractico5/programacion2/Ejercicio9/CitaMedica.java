@@ -1,0 +1,20 @@
+package trabajopractico5.programacion2.Ejercicio9;
+
+public class CitaMedica {
+    private String fecha;
+    private String hora;
+    private Paciente paciente;
+    private Profesional profesional;
+
+    public CitaMedica(String string, String string1, Paciente paciente, Profesional medico) {
+        this.fecha = fecha;
+        this.hora = hora;
+        this.paciente = paciente;
+        this.profesional = profesional;
+    }
+
+    public String getFecha() { return fecha; }
+    public String getHora() { return hora; }
+    public Paciente getPaciente() { return paciente; }
+    public Profesional getProfesional() { return profesional; }
+}
