@@ -2,11 +2,12 @@ package trabajopractico5.programacion2.Ejercicio1;
 
 public class MainEj1 {
     public static void main(String[] args) {
-        Foto foto = new Foto("foto.png", "png");
         Titular titular = new Titular("Juan Pérez", "12345678");
-        Pasaporte pasaporte = new Pasaporte("A12345", "2025-01-01", foto, titular);
+        Pasaporte pasaporte = new Pasaporte("AB123456", "2023-01-01", "foto.jpg", "JPEG");
         titular.setPasaporte(pasaporte);
-
-        System.out.println("Titular: " + titular.getNombre() + " - Pasaporte: " + pasaporte.getNumero());
+        System.out.println("Pasaporte número: " + pasaporte.getNumero());
+        System.out.println("Titular: " + pasaporte.getTitular().getNombre());
+        System.out.println("Foto: " + pasaporte.getFoto().getImagen());
     }
+    
 }

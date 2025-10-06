@@ -1,20 +1,19 @@
 package trabajopractico5.programacion2.Ejercicio2;
 
-public class Usuario {
-    private final String nombre;
-    private final String dni;
-    private Celular celular;
+public class Celular {
+    private final String imei;
+    private final String marca;
+    private final String modelo;
+    private final Bateria bateria;
+    private Usuario usuario;
 
-    public Usuario(String nombre, String dni) {
-        this.nombre = nombre;
-        this.dni = dni;
+
+    public Celular(String imei, String marca, String modelo, Bateria bateria) {
+        this.imei = imei;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.bateria = bateria;
     }
 
-    public void setCelular(Celular celular) {
-        this.celular = celular;
-    }
-
-    public Celular getCelular() { return celular; }
-    public String getNombre() { return nombre; }
-    public String getDni() { return dni; }
+    public Usuario getUsuario() { return usuario; } // ahora compila bien
 }

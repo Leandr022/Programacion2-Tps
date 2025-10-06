@@ -1,6 +1,7 @@
 package trabajopractico5.programacion2.Ejercicio1;
 
 public class Foto {
+
     private String imagen;
     private String formato;
 
@@ -9,6 +10,20 @@ public class Foto {
         this.formato = formato;
     }
 
-    public String getImagen() { return imagen; }
-    public String getFormato() { return formato; }
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+
+    public String getFormato() {
+        return formato;
+    }
+
+    public void setFormato(String formato) {
+        this.formato = formato;
+    }
+
 }
