@@ -1,34 +1,61 @@
 package trabajopractico5.programacion2.Ejercicio2;
 
-public class Celular {
-    private final String imei;
-    private final String marca;
-    private final String modelo;
-    private final Bateria bateria;
+public class Celular{
+
+    private String marca;
+    private String modelo;
+    private String imei;
+    private Bateria bateria;
     private Usuario usuario;
 
-    public Celular(String imei, String marca, String modelo, Bateria bateria) {
-        this.imei = imei;
+    public Celular(String marca, String modelo, String imei, Bateria bateria) {
         this.marca = marca;
         this.modelo = modelo;
+        this.imei = imei;
         this.bateria = bateria;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getImei() {
+        return imei;
+    }
+
+    public void setImei(String imei) {
+        this.imei = imei;
+    }
+
+    public Bateria getBateria() {
+        return bateria;
+    }
+
+    public void setBateria(Bateria bateria) {
+        this.bateria = bateria;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
     }
 
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
+        if (usuario != null && usuario.getCelular() != this) {
+            usuario.setCelular(this);
+        }
     }
 
-    public String getImei() { return imei; }
-    public String getMarca() { return marca; }
-    public String getModelo() { return modelo; }
-    public Bateria getBateria() { return bateria; }
-    public Usuario getUsuario() { return usuario; }
-
-    boolean getMarca() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    boolean getMarca() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 }
