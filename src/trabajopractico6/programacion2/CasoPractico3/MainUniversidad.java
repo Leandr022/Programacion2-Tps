@@ -32,7 +32,7 @@ public class MainUniversidad {
         uni.listarCursos();
         uni.listarProfesores();
 
-        System.out.println("\n🔄 Cambiando profesor de un curso...");
+        System.out.println("\n Cambiando profesor de un curso...");
         uni.asignarProfesorACurso("C05", "P02");
         uni.eliminarCurso("C04");
         uni.eliminarProfesor("P03");

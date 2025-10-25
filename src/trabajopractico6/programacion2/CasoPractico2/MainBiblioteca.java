@@ -21,7 +21,7 @@ public class MainBiblioteca {
         biblio.listarLibros();
 
         // 5 Buscar
-        System.out.println("\n🔍 Buscando L003:");
+        System.out.println("\n Buscando L003:");
         Libro encontrado = biblio.buscarLibroPorIsbn("L003");
         if (encontrado != null) encontrado.mostrarInfo();
 
@@ -33,7 +33,7 @@ public class MainBiblioteca {
         biblio.listarLibros();
 
         // 8 Cantidad total
-        System.out.println("\n📦 Total de libros: " + biblio.obtenerCantidadLibros());
+        System.out.println("\n Total de libros: " + biblio.obtenerCantidadLibros());
 
         // 9 Mostrar autores
         biblio.mostrarAutoresDisponibles();

@@ -17,7 +17,7 @@ public class Biblioteca {
     }
 
     public void listarLibros() {
-        System.out.println("\n📚 Libros en la Biblioteca:");
+        System.out.println("\n Libros en la Biblioteca:");
         for (Libro l : libros) {
             l.mostrarInfo();
         }
@@ -47,7 +47,7 @@ public class Biblioteca {
     }
 
     public void filtrarLibrosPorAnio(int anio) {
-        System.out.println("\n📌 Libros del año: " + anio);
+        System.out.println("\n Libros del año: " + anio);
         for (Libro l : libros) {
             if (l.getAnioPublicacion() == anio) {
                 l.mostrarInfo();
@@ -56,7 +56,7 @@ public class Biblioteca {
     }
 
     public void mostrarAutoresDisponibles() {
-        System.out.println("\n✍️ Autores en la biblioteca:");
+        System.out.println("\n️ Autores en la biblioteca:");
         for (Libro l : libros) {
             l.getAutor().mostrarInfo();
         }

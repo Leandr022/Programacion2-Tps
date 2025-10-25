@@ -46,12 +46,12 @@ public class Universidad {
     }
 
     public void listarProfesores() {
-        System.out.println("\n📌 Profesores");
+        System.out.println("\n Profesores");
         for (Profesor p : profesores) p.mostrarInfo();
     }
 
     public void listarCursos() {
-        System.out.println("\n📚 Cursos");
+        System.out.println("\n  Cursos");
         for (Curso c : cursos) c.mostrarInfo();
     }
 
@@ -74,7 +74,7 @@ public class Universidad {
     }
 
     public void reporteCursosPorProfesor() {
-        System.out.println("\n📊 Reporte: Cantidad de cursos por profesor");
+        System.out.println("\n  Reporte: Cantidad de cursos por profesor");
         for (Profesor p : profesores) {
             System.out.println(p.getId() + " → " + p.getCursos().size());
         }
